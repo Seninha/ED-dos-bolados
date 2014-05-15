@@ -1,0 +1,8 @@
+ED dos Bolados
+==============
+
+Listas de exercícios e programas da disciplina de Estruturas de Dados com Li
+Weigang.
+
+
+_ASHINTÓTIC_
