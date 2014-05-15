@@ -79,8 +79,8 @@ Lista * juntaLista(Lista * lista1, Lista *lista2) {
     lista = malloc(sizeof(Lista));
 
     while (lista1 != NULL && lista2 != NULL) {
-        adicionaElemento (lista, lista1->dado1, lista1->dado2);
-        adicionaElemento (lista, lista2->dado1, lista2->dado2);
+        lista = adicionaElemento (lista, lista1->dado1, lista1->dado2);
+        lista = adicionaElemento (lista, lista2->dado1, lista2->dado2);
         lista1 = lista1->prox;
         lista2 = lista2->prox;
     }
@@ -155,6 +155,30 @@ int main (int argc, char **argv) {
             puts("Imprime 0 se está diferente, 1 se está igual: ");
             printf("%d\n", comparaLista(c_lista1, c_lista2));
             break;
+
+        case '4':
+            puts("Juntando listas");
+
+            Lista * d_lista1;
+            d_lista1 = NULL;
+            d_lista1 = criarElemento(1,2);
+            inserirElemento(d_lista1, 4,6);
+            adicionaElemento(d_lista1, 7,9);
+
+            Lista * d_lista2;
+            d_lista2 = NULL;
+            d_lista2 = criarElemento(1,3);
+            inserirElemento(d_lista2, 4,6);
+            adicionaElemento(d_lista2, 7,4);
+
+            Lista * d_lista;
+            d_lista = NULL;
+            d_lista = juntaLista(d_lista1, d_lista2);
+
+            puts("Imprimindo conteúdo da lista final:");
+            imprimeLista(d_lista);
+            break;
+
     }
 
     return 0;
