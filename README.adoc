@@ -4,5 +4,10 @@ ED dos Bolados
 Listas de exercícios e programas da disciplina de Estruturas de Dados com Li
 Weigang.
 
+Tabela de trabalhos:
+
+|===
+| trabalho2.c | Segundo trabalho (Filas e Pilhas)
+|===
 
 _ASHINTÓTIC_
